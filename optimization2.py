@@ -234,10 +234,11 @@ def check_erkurt(image, data, pfact, efact, xfact, yfact, oxfact, oyfact, MinAre
         text = "OKEY"
     return fimage, dic1, dic2, img, text, cnts
 #%%
-with open("D:/Anadolu University/My Major/Assproject/Measurement and alignment/Erkurt/calisma/10062019/06-aag/calibration/6.json") as f:
+# Load the file describing the polygon dimensions
+with open("6.json") as f:
     data = json.load(f)
 
-# load the input image from disk
+# load the input registered image from disk
 registered_image = cv2.imread("D:/Anadolu University/My Major/Assproject/Measurement and alignment/Erkurt/calisma/10062019/06-aag/calibration/10.png", 0)
 
 #%%
